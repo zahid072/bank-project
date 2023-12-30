@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', sans-serif;
+}
+#down{
+    width: 30.5rem;
+
+}
+#down1{
+    width: 30.5rem;
+}
+#inside-box4>h1{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+#inside-box{
+    border: 1px solid transparent;
+    border-image: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0 );
+    border-image-slice: 1;
+}
+#in-btn button:hover{
+    background: rgba(0, 0, 0, 0.642);
+    color: #fe751a;
+    box-shadow: 0 0 10px #342e2a;
+    transition: 0.3s;
+    border: 1px solid #fe751a;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+abck{
+    color:#b524fe;
+}
+div::-webkit-scrollbar{
+    width: 1px;
+}
+div::-webkit-scrollbar-thumb{
+    background:linear-gradient(transparent, rgb(25, 251, 225), rgb(24, 255, 147), rgb(0, 255, 55),transparent);
+    border-radius: 6px;
+}
+#inside-box1{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    position: relative;
+    }
+    #inside-box1::before{
+      content: '';
+      background: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0 );
+      height: 37vh;
+      width: 100vw;
+      overflow: hidden;
+      border-radius: 9px;
+      animation: animate 4s linear infinite;
+    
+    }
+    #inside-box2>h1{
+        border-bottom: 2px solid black;
+        padding-bottom: 6px;
+    }
+    #inside-box3{
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        position: relative;
+
+        border-radius: 9px;
+    }
+    #inside-box3::before{
+        content: '';
+        background: linear-gradient(45deg, #ff0, #f0f, #f00, #00f, #0f0 );
+        height: 37vh;
+        width: 100vw;
+        overflow: hidden;
+        border-radius: 9px;
+        animation: animate 4s linear infinite;
+       
+    }
+     #inside-box4{
+        inset: 1px;
+        background-color: #5b8b7c;
+        border-radius: 9px;
+        position:absolute;
+     }
+    
+    #inside-box2{
+      inset: 1px;
+      background-color: #585978;
+      border-radius: 9px;
+      position:absolute;
+    }
+    @keyframes animate{
+      0%{
+          transform:rotate(0deg);
+      }
+      100% {
+          transform:rotate(360deg);
+      }
+    }

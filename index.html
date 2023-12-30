@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <!-- bank start -->
+   <header>
+    <h1 class="text-center text-5xl font-medium mt-4">My <span class="text-red-600 font-bold">Bank</span>!!!</h1>
+   </header>
+
+<!--withdraw deposit balance section start -->
+    <main class="w-3/4 mx-auto my-5 ">
+    <section class="flex gap-4 justify-center flex-wrap">
+        <div class=" duration-300 hover:shadow-[0_0_15px_black] bg-[#fb923c] w-80 h-40 rounded p-7 overflow-x-auto">
+            <h1 class="text-3xl font-normal">Deposit</h1>
+            <p class="text-5xl font-semibold ">$<span id="deposit-balance" >00</span></p>
+        </div>
+        <div class="duration-300 hover:shadow-[0_0_15px_black] bg-[#38bdf8] w-80 h-40 rounded p-7 overflow-x-auto">
+            <h1 class="text-3xl font-normal">Withdraw</h1>
+            <p class="text-5xl font-semibold ">$<span id="withdraw-balance" >00</span></p>
+        </div>
+        <div class="duration-300 hover:shadow-[0_0_15px_black] bg-[#34d399] w-80 h-40 rounded p-7 overflow-x-auto">
+            <h1 class="text-3xl font-normal">Balance</h1>
+            <p class="text-5xl font-semibold ">$<span id="total-balance" >00</span></p>
+        </div>  
+    </section>
+<!-- withdraw deposit balance section end -->
+
+<!-- withdraw deposit input section start -->
+     <section id="in-btn" class="flex gap-4 justify-center flex-wrap"> 
+        <div id="down" class="duration-300 hover:shadow-[0_0_15px_black] mt-6 p-7 bg-[#14b8a6] w- h-60 rounded">
+            <h1 class="text-3xl font-medium">Your deposit</h1>
+            <input id="deposit-input" class="block w-11/12 rounded h-10 my-4" type="number" placeholder=" Your amount">
+            <button id="deposit-btn" class=" bg-[#fe751a] px-3 py-1 rounded text-[1.2rem] font-semibold ">Deposit</button>
+        </div>
+        <div id="down" class="duration-300 hover:shadow-[0_0_15px_black] mt-6 p-7 bg-[#0891b2] w- h-60 rounded">
+            <h1 class="text-3xl font-medium">Your withdraw</h1>
+            <input  id="withdraw-input" class="witd-inpt block w-11/12 rounded h-10 my-4" type="number" placeholder=" Your amount">
+            <button id="withdraw-btn" class="bg-[#fe751a] px-3 py-1 rounded text-[1.12rem] font-semibold">Withdraw</button>
+        </div>  
+    </section> 
+<!-- withdraw deposit input section end -->
+
+<!-- history section start-->
+    <section class="flex gap-4 justify-center flex-wrap">
+        <div id="down1" class="duration-300 hover:shadow-[0_0_15px_black] text-white mt-6 p-6 bg-[#5b8b7c] h-[20rem] rounded overflow-hidden">
+            <div id="inside-box3">
+                <div id="inside-box4">
+                    <h1 class="text-3xl font-medium text-center ">Deposit history</h1>
+                    <div id="text-box1" class="text-[1.2rem] py-1 px-3 h-[14rem] overflow-y-auto">    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="down1" class="duration-300 hover:shadow-[0_0_15px_black] text-white mt-6 p-6 bg-[#585978] h-[20rem] rounded overflow-hidden">
+            <div id="inside-box1">
+                <div id="inside-box2" >
+                    <h1 class="mt-1 text-3xl font-medium text-center">Withdraw history</h1>
+                    <div id="text-box2" class="text-[1.2rem] py-1 px-3 h-[14rem] overflow-y-auto">    
+                </div>
+            </div>
+          </div>  
+        </div>  
+    </section>
+    <!-- history section end -->
+   </main>
+   <!-- bank end -->
+
+    <script src="script.js"></script>
+    <script src="histry.js"></script>
+    
+</body>
+</html>
